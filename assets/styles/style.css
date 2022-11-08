@@ -1,5 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body {
+:root {
+    --main-color: #D92123;
+    --primary-text-color: #FFF;
+    --secondary-text-color: #191919;
+    --secondary-color: #868686;
+    --tertiary-color: #EFF3F4
+}
+
+* {
+    box-sizing: border-box;
+
     font-family: Lato;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+i {
+    background-color: var(--main-color);
+
+    color: var(--primary-text-color);
+
+    font-size: 2.5rem;
+
+    padding: 2rem;
+}
+
+/* header */
+#header {
+    background-image: url("../imgs/main_banner4.png");
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    color: var(--primary-text-color);
+
+    margin-bottom: 2rem;
+
+    min-height: 90vh;
+
+    position: relative;
+}
+
+#inner-header {
+    align-items: center;
+    
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#brand {
+    background-color: var(--main-color);
+
+    padding: 1rem;
+}
+
+#navbar {
+    display: flex;
+
+    gap: 4rem;
+
+    margin-right: 2rem;
+
+    text-transform: uppercase;
+}
+
+#navbar a {
+    color: var(--primary-text-color);
+
+    font-weight: bold;
+
+    padding: 1rem;
+}
+
+.banner.active {
+    opacity: 1;
+}
+
+.banner {
+    max-width: 50%;
+
+    opacity: 0;
+
+    padding: 4rem;
+
+    position: absolute;
+
+    transition: 0.6s;
+}
+
+.banner h2 {
+    font-size: 4rem;
+
+    margin-bottom: 1.2rem;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+.square {
+    background-color: var(--main-color);
+
+    display: block;
+
+    height: 150px;
+
+    left: 20px;
+
+    position: absolute;
+
+    top: 40px;
+
+    width: 150px;
+
+    z-index: 1;
+}
+
+.dots {
+    bottom: 3rem;
+
+    display: flex;
+
+    gap: 2rem;
+
+    left: 3rem;
+
+    position: absolute;
+}
+
+.dot {
+    background-color: var(--secondary-color);
+
+    height: 20px;
+
+    width: 20px;
+}
+
+.dot.active {
+    background-color: var(--main-color);
 }
