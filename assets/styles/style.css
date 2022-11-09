@@ -493,3 +493,77 @@ i {
 
     text-transform: uppercase;
 }
+
+/* contact */
+#contact {
+    background-color: var(--main-color);
+
+    gap: 0;
+
+    padding-bottom: 5rem;
+}
+
+#contact-information {
+    flex: 1 1 0;
+
+    padding: 3rem;
+
+    position: relative;
+
+    text-align: center;
+}
+
+#contact-information .section-subtitle {
+    color: var(--primary-text-color);
+}
+
+#contact-information i {
+    background-color: var(--primary-text-color);
+
+    color: var(--main-color);
+
+    left: 0;
+
+    position: absolute;
+
+    top: 0;
+}
+
+#contact-information form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+#contact-information .form-control {
+    display: flex;
+
+    gap: 1rem;
+}
+
+#contact-information input,
+#contact-information textarea {
+    border: none;
+
+    flex: .5;
+
+    padding: 1rem;
+}
+
+#contact-information .btn {
+    align-self: flex-start;
+
+    border: 2px solid var(--primary-text-color);
+
+    font-size: 1.2rem;
+
+    transition: .4s;
+}
+
+#contact-information .btn:hover {
+    background-color: var(--primary-text-color);
+
+    color: var(--main-color);
+}
