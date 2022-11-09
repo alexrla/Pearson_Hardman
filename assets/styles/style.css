@@ -389,3 +389,46 @@ i {
 .data .text {
     text-transform: uppercase;
 }
+
+/* testimonials */
+#testimonials {
+    align-items: center;
+
+    display: flex;
+}
+
+#testimonial-information {
+    padding: 3rem;
+}
+
+.author {
+    align-items: center;
+
+    display: flex;
+
+    gap: 1rem;
+
+    justify-content: flex-end;
+}
+
+.author img {
+    height: 100px;
+
+    width: 100px;
+}
+
+.author .author-name {
+    color: var(--main-color);
+
+    font-size: 1.3rem;
+
+    font-weight: bold;
+
+    margin-bottom: 1rem;
+
+    text-transform: uppercase;
+}
+
+.author .author-job {
+    color: var(--secondary-text-color);
+}
