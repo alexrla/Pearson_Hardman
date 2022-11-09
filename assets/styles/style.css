@@ -164,7 +164,7 @@ i {
     background-color: var(--main-color);
 }
 
-/* áreas de atuação */
+/* areas of expertise */
 .text-image-section {
     display: flex;
 
@@ -671,4 +671,219 @@ i {
 
 .phone-info {
     color: var(--secondary-color);
+}
+
+/* mobile */
+#menu, #close-menu {
+    display: none;
+
+    font-size: 2rem;
+
+    padding: 1rem;
+}
+
+#close-menu {
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+}
+
+#mobile-navbar {
+    background-color: rgba(0, 0, 0, .95);
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+    justify-content: space-around;
+
+    left: 100%;
+
+    padding: 4rem 2rem;
+
+    position: fixed;
+
+    top: 0;
+
+    transition: .4s;
+
+    width: 100%;
+
+    z-index: 5;
+}
+
+#mobile-navbar.menu-active {
+    left: 0;
+}
+
+#mobile-navbar a {
+    border-bottom: 1px solid var(--main-color);
+
+    color: var(--primary-text-color);
+
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+
+    padding-bottom: 1.5rem;
+
+    text-align: center;
+}
+
+/* responsividade */
+@media(max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    i {
+        font-size: 2rem;
+
+        padding: 1.5rem;
+    }
+
+    /* navbar */
+    #navbar {
+        display: none;
+    }
+
+    #menu, #close-menu {
+        display: block;
+    }
+
+    .banner {
+        max-width: 100%;
+
+        padding: 4rem 2rem;
+    }
+
+    .banner h2 {
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    /* areas of expertise */
+    .btn {
+        align-self: initial;
+    }
+
+    .image-container {
+        flex: 1 1 100%;
+    }
+
+    #other-services {
+        flex-wrap: wrap;
+    }
+
+    /* about */
+    #about {
+        gap: 0;
+    }
+
+    #about-text, #about-data {
+        flex: 1 1 100%;
+    }
+
+    #about-description {
+        gap: 1rem;
+    }
+
+    #about-description i {
+        min-width: 40px;
+
+        padding: 0;
+    }
+
+    #about #about-data .data {
+        border: none;
+
+        border-bottom: 1px solid var(--secondary-text-color);
+
+        width: 100%;
+    }
+
+    /* testimonials */
+    .text-container {
+        padding: 2rem;
+
+        text-align: center;
+    }
+
+    .author {
+        flex-direction: column;
+    }
+
+    /* employees */
+    #team {
+        margin-top: 2rem;
+    }
+
+    #team h2 {
+        font-size: 2.5rem;
+    }
+
+    .employees {
+        flex-wrap: wrap;
+    }
+
+    /* contact */
+    #contact {
+        padding-bottom: 0;
+    }
+
+    #contact-information {
+        padding: 7rem 1rem;
+    }
+
+    #contact-information i {
+        top: -3px
+    }
+
+    #contact-information .form-control {
+        flex-direction: column;
+    }
+
+    #contact-information .btn {
+        align-self: auto;
+    }
+
+    /* footer */
+    #footer {
+        flex-wrap: wrap;
+    }
+
+    #footer i {
+        font-size: 2rem;
+
+        padding: 1rem;
+    }
+
+    .footer-brand {
+        text-align: center;
+    }
+
+    .contact-info,
+    .links-container {
+        width: 100%;
+    }
+
+    .networks {
+        margin-bottom: 3rem;
+    }
+
+    .links-container {
+        margin-bottom: 1rem;
+    }
+
+    .links-container h4 {
+        margin-bottom: 1.5rem;
+    }
+
 }
